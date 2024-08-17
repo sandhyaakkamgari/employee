@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="employee.css">
+<style>
+  
+  
+ .context{
+  border: 1px solid white;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 90%;
+  
+  
+ }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     
+    
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color:blue;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h1> Jala Project</h1>
+  <a class="active" href="#home">Home</a>
+  <a href="collapsable.html">Collapsable</a>
+  <a href="cssframes.html">Cssframes</a>
+  <a href="autocomplete.html">AutoComplete</a>
+  <a href="Iframe.html">I Frames</a>
+  <a href="images.html">Images</a>
+  <a href="links.html">Links</a>
+  <a href="menu.html">Menu</a>
+  <a href="multipletab.html">Multiple Tabs</a>
+  <a href="popups.html">Popups</a>
+  <a href="slider.html">Slider</a>
+  <a href="tooltips.html">Tooltips</a>
+  <a href="employees.html">Employess</a>
+  <a href="search.html">Search</a>
+  
+ 
+
+
+  
+
+
+    <body>
+    
+    
+    
+    
+</div>
+<div>
+
+
+    <div class="context">
+    <h1>
+    <a text-align="margin-right" href="login.html">Logout</a> 
+    </h1>
+  </div>
+  
+</div>
+
+
+
+
+
+<h1>Employee Details</h1>
+
+    <!-- Form for adding a new employee -->
+    <div class="form-container">
+        <h2>Add Employee</h2>
+        <form id="employee-form">
+            <input type="text" id="first-name" placeholder="First Name">
+            <input type="text" id="last-name" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="mobile-number" placeholder="Mobile Number">
+            <input type="date" id="date-of-birth" placeholder="Date Of Birth">
+            <select id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <textarea id="address" placeholder="Address"></textarea>
+            <input type="text" id="country" placeholder="Country">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="skills" placeholder="Skills">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by Name">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Employee list -->
+    <div id="employee-list">
+        <!-- Employee records will be displayed here -->
+    </div>
+    <script src="employee.js"></script>
+</body>
+</html>
